@@ -1,0 +1,14 @@
+.custom-list {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: left;
+}
+
+.custom-list li::before {
+    content: '\2022'; /* Unicode for a bullet point */
+    color: #007bff; /* Color of the bullet */
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
